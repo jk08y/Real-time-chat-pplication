@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="8dp"
+    android:paddingTop="4dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="4dp">
+
+    <!-- Text message layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_message_received"
+        android:padding="12dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="280dp">
+
+        <TextView
+            android:id="@+id/text_message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/message_text_color"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Hello, how are you doing today?" />
+
+        <TextView
+            android:id="@+id/text_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/text_tertiary"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_message_content"
+            tools:text="12:34 PM" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Image message layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_image_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_message_received"
+        android:padding="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="64dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="280dp"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/image_message_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="Image message"
+            android:maxHeight="300dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/image_placeholder" />
+
+        <TextView
+            android:id="@+id/image_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:textColor="@color/text_tertiary"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_message_content"
+            tools:text="12:34 PM" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Voice message layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_voice_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_message_received"
+        android:padding="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="64dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_max="280dp"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/voice_play_button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="Play"
+            android:src="@android:drawable/ic_media_play"
+            app:layout_constraintBottom_toBottomOf="@+id/voice_seekbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/voice_seekbar" />
+
+        <ImageView
+            android:id="@+id/voice_pause_button"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="Pause"
+            android:src="@android:drawable/ic_media_pause"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/voice_seekbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/voice_seekbar"
+            tools:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/voice_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/voice_seekbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/voice_seekbar"
+            tools:visibility="visible" />
+
+        <SeekBar
+            android:id="@+id/voice_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toStartOf="@+id/voice_duration"
+            app:layout_constraintStart_toEndOf="@+id/voice_play_button"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/voice_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="36dp"
+            android:text="0:00"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/voice_seekbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/voice_seekbar" />
+
+        <TextView
+            android:id="@+id/voice_message_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/text_tertiary"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/voice_seekbar"
+            tools:text="12:34 PM" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.ChatLogger" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/primary_dark</item>
+
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorError">@color/error</item>
+
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorTertiary">@color/text_tertiary</item>
+
+        <!-- Typography -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.ChatLogger.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.ChatLogger.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.ChatLogger.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.ChatLogger.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.ChatLogger.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.ChatLogger.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.ChatLogger.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.ChatLogger.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.ChatLogger.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.ChatLogger.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.ChatLogger.Caption</item>
+        <item name="textAppearanceButton">@style/TextAppearance.ChatLogger.Button</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.ChatLogger.Overline</item>
+
+        <!-- Component styles -->
+        <item name="materialButtonStyle">@style/Widget.ChatLogger.Button</item>
+        <item name="textInputStyle">@style/Widget.ChatLogger.TextInputLayout</item>
+    </style>
+
+    <!-- Typography styles -->
+    <style name="TextAppearance.ChatLogger" parent="TextAppearance.MaterialComponents" />
+
+    <style name="TextAppearance.ChatLogger.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">96sp</item>
+    </style>
+
+    <style name="TextAppearance.ChatLogger.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <style name="TextAppearance.ChatLogger.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">48sp</item>
+    </style>
+
+    <style name="TextAppearance.ChatLogger.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="TextAppearance.ChatLogger.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextAppearance.ChatLogger.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextAppearance.ChatLogger.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.ChatLogger.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.ChatLogger.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextAppearance.ChatLogger.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextAppearance.ChatLogger.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TextAppearance.ChatLogger.Button" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">sans-serif-medium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextAppearance.ChatLogger.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+</resources>

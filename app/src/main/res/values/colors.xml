@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base colors -->
+    <color name="primary">#3A76F0</color>
+    <color name="primary_dark">#2959C0</color>
+    <color name="primary_light">#D0E1FF</color>
+    <color name="accent">#03DAC5</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#202124</color>
+    <color name="text_secondary">#5F6368</color>
+    <color name="text_tertiary">#9AA0A6</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- Background colors -->
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="error">#B00020</color>
+
+    <!-- Chat message colors -->
+    <color name="sent_message_background">#E3F2FD</color>
+    <color name="received_message_background">#F5F5F5</color>
+    <color name="message_text_color">#000000</color>
+    <color name="deleted_message_color">#9E9E9E</color>
+
+    <!-- Status colors -->
+    <color name="online_status">#4CAF50</color>
+    <color name="typing_status">#2196F3</color>
+
+    <!-- Standard colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Whatsapp colors (for reference) -->
+    <color name="whatsapp_green">#128C7E</color>
+    <color name="whatsapp_light_green">#25D366</color>
+    <color name="whatsapp_chat_background">#ECE5DD</color>
+</resources>

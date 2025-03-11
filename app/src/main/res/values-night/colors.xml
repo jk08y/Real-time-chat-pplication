@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark mode colors -->
+    <color name="primary">#4285F4</color>
+    <color name="primary_dark">#3367D6</color>
+    <color name="primary_light">#A0C3FF</color>
+    <color name="accent">#03DAC6</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#E8EAED</color>
+    <color name="text_secondary">#9AA0A6</color>
+    <color name="text_tertiary">#747775</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- Background colors -->
+    <color name="background">#121212</color>
+    <color name="surface">#1E1E1E</color>
+    <color name="error">#CF6679</color>
+
+    <!-- Chat message colors -->
+    <color name="sent_message_background">#0B3D91</color>
+    <color name="received_message_background">#2C2C2C</color>
+    <color name="message_text_color">#E8EAED</color>
+    <color name="deleted_message_color">#9AA0A6</color>
+
+    <!-- Status colors -->
+    <color name="online_status">#4CAF50</color>
+    <color name="typing_status">#2196F3</color>
+</resources>
