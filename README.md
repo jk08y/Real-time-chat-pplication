@@ -1,6 +1,3 @@
-# ChatLogger
-
-A modern Android messaging app with background SMS and WhatsApp logging capabilities.
 
 ## Features
 
